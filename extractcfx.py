@@ -13,7 +13,7 @@ try:
     headers = response.headers
     for count, header in enumerate(headers):
         data = data + "[{}] | ({}): {}\n".format(count, header, headers[header])
-        
+
     print(data)
 
 except (requests.exceptions.MissingSchema, requests.exceptions.InvalidSchema):
