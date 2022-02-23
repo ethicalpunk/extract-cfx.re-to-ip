@@ -11,14 +11,9 @@ except IndexError:
 try:
     response = requests.get(host)
     headers = response.headers
-    for count, header in enumerate(headers):
-        if header == "X-Citizenfx-Url":
-            data = data + "[{}] | ({}): {}\n".format(count, header, headers[header])
-        elif header == "X-Citizenfx-Join-Token":
-            data = data + "[{}] | ({}): {}\n".format(count, header, headers[header])
-        else:
-            data = data + "[{}] | ({}): {}\n".format(count, header, headers[header])
-
+    for count, header in enumerate(headers)
+        data = data + "[{}] | ({}): {}\n".format(count, header, headers[header])
+        
     print(data)
 
 except (requests.exceptions.MissingSchema, requests.exceptions.InvalidSchema):
