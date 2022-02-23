@@ -11,7 +11,7 @@ except IndexError:
 try:
     response = requests.get(host)
     headers = response.headers
-    for count, header in enumerate(headers)
+    for count, header in enumerate(headers):
         data = data + "[{}] | ({}): {}\n".format(count, header, headers[header])
         
     print(data)
