@@ -5,7 +5,7 @@ try:
     host = sys.argv[1]; data = ""
 
 except IndexError:
-    print(f"Usage: {sys.argv[0]} <https://cfx.re(link)>")
+    print(f"Usage: {sys.argv[0]} <https://cfx.re/(link)>")
     sys.exit()
 
 try:
